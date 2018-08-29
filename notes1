@@ -1,0 +1,52 @@
+Unix Lisans Türleri;
+
+GNU General Public License
+GNU çokça kullanılan bir lisans olup aşağıdakileri sağlar.
+-Kopyalayabilirsiniz.
+-Dağıtabilirsiniz.
+-İstediğiniz değişiklikleri yapabilirsiniz.
+-Yazılımın her yeni versiyonu bu lisansı kullanmak zorundadır
+
+BSD(Berkeleyy) : Lisansına göre kamu ile paylaşma zorunluluğu yoktur.
+
+*write komutu ile oturun açmış bir kullanıcıya mesaj gönderilebilir.Mesaj alımını kapatmak için "mesg n" kullanılır.
+-write kullanıcı_adı
+
+*wall komutu ile sistemdeki tüm kullanıcılara mesaj gönderilebilir.
+
+*root kullanıcısının uid değeri "0" dır.
+*herhangi bir kullanıcıya root hakları vermek için onun uid değerini 0 olarak değiştirmek yeterlidir.
+*grup bilgileri : /etc/groups *grup parolaları /etc/gshadow dosyalarında barındırılır.
+*groupadd/groupdel/gpasswd(kullanıcıyı bir calısma grubuna dahil etmek veya cıkarmak için)
+*newgrp komutu ile kullanıcının aktif grubu değiştirilebilir.
+
+*etc/shells dosyasında shell tipleri belirtilir. chsh komutu ile shell değiştirilebilir.
+*sistemde kullanıcı kimlik kanıtlamasına ihtiyac duyan her program için etc/pam.d/ dizinininde bir dosya bulunur.
+*PAM sistem yapılandırması ve çalışma yapısı ARASTIRILACAK.
+*rm -i silme işlemini onay isteyerek yapar.
+*find komutu için birçok parametre kullanılabilir.; -name -uid -size -user vb.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
