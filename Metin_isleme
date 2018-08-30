@@ -1,0 +1,7 @@
+*diff metin1 metin2 = komutu ile iki dosyanın farklı olup olmadığını anlamaya çalışılır.
+*md5sum dosya = komutu ile herhangi bir dosyanın içeriğinin bozulup bozulmadığının kontrolü yapılır.
+
+*cut = komutu ile dosyayı kolonlarına göre bölebiliriz.
+*tr = değişim yapmak içindir.
+*split = dosyayı bölmek için kulanılır.
+
