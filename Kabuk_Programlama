@@ -1,0 +1,39 @@
+Herhangi bir metin düzenleme programı ile yazılırlar.Dosyay çalıştırma yetkisi verilir.Komut yazar gibi dosya ismi yazılır.
+Kabuk dosyayı satır satır yorumlar ve çalıştırır.
+* "#" karakteri yorum satırıdır.
+
+*ÇEVRE DEĞİŞKENLERİ ; 
+
+Aktarma ; degiskenAdi = değer
+Okuma   ; echo $degiskenAdi
+          yenidegisken = $degiskenAdi
+          
+TIRNAKLAR ; 
+
+"" çift tırnak değişken tanımlanırken
+ters tırnak = değişken ve komut tanımlarken kullanılabilir.
+tek tırnak yakalanmaz
+
+Örnek ; su_an = 'date'(ters tırnak)
+        echo "su anki zaman: $su_an"
+        
+
+*değişken tanımlanırken {} kullanılabilir.
+
+*kabukta aritmatik işlemler let komutu ile gerçekleştirilir.
+
+
+*DİZİLER
+
+echo ${DIZI[0]}  => Şeklinde tanımlanır.
+
+*dizinin herhangi bir elemanını silmek için "unset DIZI[0]" kullanılır.
+
+
+
+
+
+
+
+
+        
