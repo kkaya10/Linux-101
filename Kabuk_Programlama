@@ -29,7 +29,18 @@ echo ${DIZI[0]}  => Şeklinde tanımlanır.
 
 *dizinin herhangi bir elemanını silmek için "unset DIZI[0]" kullanılır.
 
+*kullanıcı ile etkileşime geçilecekse read komutu kullanılır.
+*Read komutuna –t parametresi vererek kullanıcının belirli bir süre içinde giriş yapmasını sağlayabiliriz.
+*Benzer şekilde kullanıcının girdiği verileri ekrana yazmak istemezsek –mesela parola gibi-  read komutunu –s parametresi ile denemeliyiz. 
 
+
+IF-CASE YAPILARI
+
+if durum; then 
+    echo "Girdiginiz sayi cifttir" 
+else 
+    echo "Girdiginiz sayi tektir." 
+fi 
 
 
 
