@@ -1,0 +1,47 @@
+
+*Her Unix programının 3 adet standart kanalı mevcuttur: Girdi(0)-Çıktı(1)-Hata(2) Kanalları.
+
+Bourne Again SHELL : 
+
+Özellikleri ; 
+
+-Komut satırı düzenleme
+-Geçmiş komutları çağırma ve düzenleme(CTRL+R)
+-Bir bölümü yazılmış komutları tamamlama
+-Fonksiyon ve takma isimleri destekler
+-aritmetik işlem yapar.
+-komut istemini özelleştiren özel karakter dizileri sunar.
+
+PATH değişkeni : komutları arama dizinlerini tutar.
+
+*Komutlara takma isim verme : 
+
+alias dir = "ls -l" 
+  artık dir komutu ls -l işlemini gerçekleştirir.
+
+unalias dir
+  komutu takma ismi kaldırır.
+  
+unalias -a 
+  tüm takma isimleri kaldırır.
+  
+  
+*Çalışan komut control+z ile askıya alınabilir.
+    -bg ile art alanda calısması sürdürülür.(background)
+    -fg ile tekrar ön plana alınabilir.(frontground)
+    
+    
+*jobs komutu ile art alanda calisan komutlar izlenebilir.
+
+*fg %sirano ile art alanda calısaln uygulamalardan istenilen öne çağırılabilir.
+*kill %sira ile art alanda calısan uygulamalardan istenilen öldürülür.
+
+
+
+
+
+
+
+
+
+
