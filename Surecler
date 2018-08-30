@@ -1,0 +1,27 @@
+Çalışması ile sonlanması arasında her program bir süreç olarak adlandırılır.
+pid numarları ile bu süreçler tarif edilir.Ayrıca her sürecin birde ata süreci vardır ppid olarak tanımlanır.
+süreçlerin denetimleri sinyal mekanizması ile yapılmaktadır.
+
+*ps komutu ile süreçler izlenirler.
+
+*Kullanılan bazı sinyaller ; 
+
+SIGTERM = calısan süreci sonlandırma
+SIGKILL = sonlanmayı reddeden süreci sonlandırmak.
+SIGSTOP = çalışan süreci duraklatmak
+SIGCONT = duraklamış süreci yeniden canlandırma
+SIGHUP = ayar dosyalarının yeniden okutulması
+
+*Süreçler sinyaller ile yönetilir.
+*Sinyaller kill komutu ile iletilir. (kill -SIGHUP süreç_no)
+*killall = süreçlere sinyalleri süreç ismi ile iletmektedir.
+  "killall -SIGSTOP httpd"
+  
+*süreçlerin önceliği "Nice" komutu ile belirlenir.
+    nice değeri -20 ile 19 arasında değişir.(varsayılan nice = 0)
+    
+
+    
+    
+    
+    
