@@ -1,0 +1,19 @@
+*systemd , tüm hizmet ve servislerin ihtiyaç duyduğu bağlanma noktalarını ilgili hizmet başlamasa bile önceden başlatır ve diğer 
+bekleyen programların sırada beklemesini ortadan kaldırır.
+
+Hizmet Süreçleri için ;  systemctl ve chkconfig araçları kullanılabilir.
+
+*systemctl start|stop|restart|reload|status servis_Adi.service
+
+  -enable = otomatik baslatma
+  -disable = otomatik baslatma iptali
+  -mask = servisi elle baslatmayı engelleme
+  -unmask = elle baslatma engelini kaldırma
+  
+  
+*Systemctl ile güç yönetimi ; 
+
+systemctl reboot
+systemctl poweroff
+systemctl suspend(uyku modu)
+systemctl hibernate(derin uyku)
