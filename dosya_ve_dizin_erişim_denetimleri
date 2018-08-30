@@ -52,7 +52,53 @@ setgid(s) = grubunun "s" çalıştırma yetkisi olan dosya kim tarafından çal�
 sticky(s) = dşzşnlerdeki "t" yetkisi dizinin içine herkesin yazabilmesini fajat başkalarına ait dosyaları değiştirip silememesini sağlar.
 
 
-                               
+chmod u+s dosya
+chmod g+s dosya
+
+komutları ile yetkilendirme yapılır.
+
+
+Rakalarla yetkilendirme;
+
+su=4 sg=2 t=1 -=0
+
+chmod 1777 dizin => rwxrwxrwt
+chmod 4755 dizin => rwsr-xr-x
+
+
+UMASK; dosya ve dizin yaratıldıklarında alacakları varsayılan yetkileri belirler.
+
+Dosya Sahip ve Grup Değişikliği;
+
+chown -R yenisahip dizin
+chgrp -R yenigrup dizin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              
                                
                                
                                
