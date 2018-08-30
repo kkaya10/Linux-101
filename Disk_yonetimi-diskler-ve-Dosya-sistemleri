@@ -1,0 +1,16 @@
+DOSYA Sistemlerine örnek olarak ; 
+
+Windowslara ; FAT , NTFS
+Linuxlarda ; EXT2,EXT3,EXT4
+örnekleri verilebilir.
+
+*Linux EXT3 ve RaiserFS dosya sistemleri ile çalışmaktadır.
+*Yaklaşık 20 kadar dosya sistemide Linux altında kullanılabilmektedir.
+*FAT32 ve ExFat dosya sistemleri OSX,Linux ve Windows larda ortak olarak kullanılabilir durumdadır.
+
+*Eğer farklı işletim sistemleri arasında aktarımlı şekilde çalışıyorsanız ExFAT dosya sistemi hepsinde doğru
+bir şekilde çalışmak için uygundur.
+
+*gparted,mount,unmount 
+*bzip2 sıkıştırma algoritması gzip'e göre daha cok sıkıştırma oranı yakalar.
+
