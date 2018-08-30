@@ -1,0 +1,65 @@
+UNIX sistemlerde her kaynağın ;
+
+-sahibi
+-grubu
+-others
+
+olmak üzere write,read,execute yetkileri vardır.
+
+*öntanımlı olarak bir kullanıcı kendi home dizininde bulunan tüm kaynaklar üzerinde tam yetkiye sahiptir.
+*Root kullanıcısı ise tüm kaynaklar üzerinde her yetkiye sahiptir.
+
+*Dizinler için olan erişim yetkileri dosyalar için olandan biraz farklıdır.
+
+Okuma ; dizinin içerisindeki dosya dizinleri listeleme yetkisidir.
+Yazma ; dizinin içinde dosya ve dizin yaratma yetkisidir.
+Çalıştırma ; Dizinin içerisine girebilme yetkisidir.
+
+
+Yetkilerin Düzenlenmesi ; 
+
+chmod [ugoa] [+-=] [rwxst][, ...] dosya/dizin
+
+a = tüm herkes için düzenleme
+s = sahibi olarak çalıştırma yetkisi
+t = dizine özel yazma yetkisi(sticky)
+
+"=" = sadece söz konusu yetkinin verilmesi
+
+Örnekler;
+  chmod u+x dosya  -> dosya dizininin sahibine execute yetkisi verir.
+  chmod ug=rw dosya -> dosya dizininin user ve grup üyelerine read ve write yetkileri verilmiştir.Diğerlerinin yetkileri ise değişmez.
+  
+  *Ayrıca araya virgül koyarak aynı anda birden fazla yetkilendirme yapılabilir.
+  
+  chmod ug+rw,ug-x,o-rwx dosya -> dosya dizininin user ve grup kullanıcılarına read ve write yetkileri verilirken execute yetkisi
+                                  alınmıştır.Others'a ise tüm yetkiler elinden alınmıştır.
+                                  
+                                  
+ *Bazı özel yetkiler mevcuttur.(setUİD , stick , setGİD).
+ 
+ *Yetki verilirken sayılar kullanılabilmektedir.
+   -chmod  777 dosya -> komutu ile dosyaya rwxrwxrwx yetkileri düzenlenmiştir.
+   
+   
+Özel Erişim Yetkileri ;
+
+setuid(s) = sahibinin "s" çalıştırma yetkisi olan dosya kim tarafından çalıştırılırsa çalıştırılsın sahibi tarafından çalıştırılmış 
+            gibi davranır.
+            
+setgid(s) = grubunun "s" çalıştırma yetkisi olan dosya kim tarafından çalıştırılırsa çalıştırılsın dosyanın grubu aktif grup olur.
+
+sticky(s) = dşzşnlerdeki "t" yetkisi dizinin içine herkesin yazabilmesini fajat başkalarına ait dosyaları değiştirip silememesini sağlar.
+
+
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
